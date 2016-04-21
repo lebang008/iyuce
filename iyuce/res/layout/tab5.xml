@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:background="#00000000"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/img_tab5_icon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/img_duck" />
+
+        <TextView
+            android:id="@+id/txt_tab5_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_tab5_icon"
+            android:layout_centerHorizontal="true"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp" >
+
+            <TextView
+                android:id="@+id/txt_tab5_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/tabfive_a"
+                android:text="     提醒 "
+                android:textColor="#a2a2a2"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt_tab5_localmessage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:text=" (0)"
+                android:textColor="#f0742e"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_margin="8dp"
+            android:background="#cccccc" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp" >
+
+            <TextView
+                android:id="@+id/txt_tab5_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/tabfive_b"
+                android:text="     我的金币"
+                android:textColor="#a2a2a2"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt_tab5_localmoney"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:textColor="#f0742e"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_margin="8dp"
+            android:background="#cccccc" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp" >
+
+            <TextView
+                android:id="@+id/txt_tab5_room"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/tabfive_c"
+                android:gravity="center"
+                android:text="     我的考场"
+                android:textColor="#a2a2a2"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt_tab5_localroom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:textColor="#f0742e"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_margin="8dp"
+            android:background="#cccccc" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp" >
+
+            <TextView
+                android:id="@+id/txt_tab5_subject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/tabfive_d"
+                android:text="     我的考题"
+                android:textColor="#a2a2a2"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt_tab5_localsubject"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:textColor="#f0742e"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_margin="8dp"
+            android:background="#cccccc" />
+
+        <TextView
+            android:id="@+id/txt_to_aboutus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/tabfive_e"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:text="     关于我们"
+            android:textColor="#a2a2a2"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_margin="8dp"
+            android:background="#cccccc" />
+
+        <TextView
+            android:id="@+id/txt_to_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/tabfive_f"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:text="     版本更新"
+            android:textColor="#a2a2a2"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_margin="8dp"
+            android:background="#cccccc" />
+
+        <TextView
+            android:id="@+id/txt_to_suggestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/tabfive_g"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:text="     意见反馈"
+            android:textColor="#a2a2a2"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_margin="8dp"
+            android:background="#cccccc" />
+    </LinearLayout>
+
+</LinearLayout>

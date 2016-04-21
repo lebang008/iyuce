@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txt_subcontent_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#3399ff"
+        android:gravity="center"
+        android:textColor="#ffffff" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp" >
+
+        <Button
+            android:id="@+id/button_subcontent_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/buttonstyle"
+            android:text="返回"
+            android:textColor="#cccccc"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button_subcontent_back"
+            android:layout_alignBottom="@+id/button_subcontent_back"
+            android:layout_alignParentLeft="true"
+            android:text=" 高频统计  > 题库内容"
+            android:textColor="#ecb22c"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#cccccc" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff" >
+
+        <uk.co.senab.photoview.PhotoView
+            android:id="@+id/img_subcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/btn_subcontent_vote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:background="@drawable/buttonstyle_bluestroke"
+            android:text="投 票"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:textStyle="bold"
+            android:textColor="#3399ff" />
+    </FrameLayout>
+
+</LinearLayout>

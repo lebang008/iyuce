@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_speaking_shishihuiyi"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/ll_category_back"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#f25f11"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/txt_speaking_shishihuiyi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/icon_shishihuiyi"
+                android:text=" 实时回忆"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_speaking_gaopintongji"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#f7a900"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/txt_speaking_gaopintongji"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/icon_gaopintongji"
+                android:text=" 高频统计"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp" >
+
+        <Button
+            android:id="@+id/button_category_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/buttonstyle"
+            android:text="返回"
+            android:textColor="#cccccc"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button_category_back"
+            android:layout_alignBottom="@+id/button_category_back"
+            android:layout_alignParentLeft="true"
+            android:text=" 高频统计  > 更多题库"
+            android:textColor="#ecb22c"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#cccccc" />
+    
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8.0dip"
+        android:layout_marginTop="8.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="30.0dip"
+            android:layout_weight="1.0"
+            android:drawableLeft="@drawable/icon_red"
+            android:drawablePadding="10.0dip"
+            android:gravity="center_vertical"
+            android:text="标准重点" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="30.0dip"
+            android:layout_weight="1.0"
+            android:drawableLeft="@drawable/icon_green"
+            android:drawablePadding="10.0dip"
+            android:gravity="center_vertical"
+            android:text="一级战备" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="30.0dip"
+            android:layout_weight="1.0"
+            android:drawableLeft="@drawable/icon_light_green"
+            android:drawablePadding="10.0dip"
+            android:gravity="center_vertical"
+            android:text="二级战备" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <Button
+            android:id="@+id/btn_category_part1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/buttonstyle"
+            android:padding="4dp"
+            android:text="Part1"
+            android:textColor="#3399ff"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_category_part2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/buttonstyle"
+            android:text="Part2"
+            android:textColor="#3399ff"
+            android:padding="4dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gridview_category"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:numColumns="3"
+        android:padding="4dp"
+        android:scrollbars="none"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp" />
+
+</LinearLayout>

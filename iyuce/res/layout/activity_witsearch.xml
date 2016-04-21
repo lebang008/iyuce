@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txt_subcontent_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#9f6eaf"
+        android:gravity="center"
+        android:text="写作题库内容搜索"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp" >
+
+        <Button
+            android:id="@+id/btn_witsearch_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/buttonstyle"
+            android:text="返回"
+            android:textColor="#cccccc"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btn_witsearch_back"
+            android:layout_alignBottom="@+id/btn_witsearch_back"
+            android:layout_alignParentLeft="true"
+            android:text=" 写作题库  > 搜索结果"
+            android:textColor="#ecb22c"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#cccccc" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ListView
+            android:id="@+id/listview_witsearch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            android:scrollbars="none" />
+
+        <TextView
+            android:id="@+id/txt_witsearch_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="#9f6eaf"
+            android:textSize="16sp" />
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txt_gongyi_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#53a9ae"
+        android:drawableLeft="@drawable/arrow_white_back"
+        android:gravity="center"
+        android:text="公益课堂"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_gongyi_audio"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#33999f"
+        android:gravity="center"
+        android:text="音频课堂"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/txt_gongyi_tencent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#366090"
+        android:gravity="center"
+        android:text="腾讯课堂"
+        android:textColor="#ffffff" />
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="10"
+        android:background="#f25f11"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/arrow_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="center"
+            android:src="@drawable/arrow_white_back" />
+
+        <TextView
+            android:id="@+id/txt_lesson_title"
+            android:layout_width="match_parent"
+            android:layout_height="40.0dip"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        android:layout_weight="1"
+        android:background="@drawable/background_main"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp" >
+
+        <GridView
+            android:id="@+id/gridview_lesson"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:horizontalSpacing="20dp"
+            android:listSelector="#00000000"
+            android:numColumns="2"
+            android:verticalSpacing="60dp" >
+        </GridView>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txt_witcontent_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#9f6eaf"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp" >
+
+        <Button
+            android:id="@+id/button_witcontent_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/buttonstyle"
+            android:text="返回"
+            android:textColor="#cccccc"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button_witcontent_back"
+            android:layout_alignBottom="@+id/button_witcontent_back"
+            android:layout_alignParentLeft="true"
+            android:text=" 写作题库  > 题库内容"
+            android:textColor="#ecb22c"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#cccccc" />
+
+    <TextView
+        android:id="@+id/txt_witcontent_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="bottom"
+        android:padding="16dp"
+        android:textColor="#9f6eaf"
+        android:textSize="18sp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <uk.co.senab.photoview.PhotoView
+            android:id="@+id/photoview_witcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-16dp"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/btn_witcontent_toAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_margin="8dp"
+            android:background="@drawable/spinnerstyle"
+            android:padding="8dp"
+            android:text="查看答案"
+            android:textColor="#ffffff" />
+    </FrameLayout>
+
+</LinearLayout>

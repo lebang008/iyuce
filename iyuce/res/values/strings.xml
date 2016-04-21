@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">i预测</string>
+    <string name="action_settings">设置</string>
+    <string name="aiyoupuintroduce">厦门爱优普教育咨询有限公司是经国家工商行政管理部门依法批准的专业化教育咨询公司，是专注于英语技巧培养提升的教育机构，旨在为广大考生提供丰富、准确的信息。  </string>
+    <string name="welcome">Welcome To Ipredicting</string>
+    <string name="username">Username:</string>
+    <string name="password">Password:</string>
+    <string name="prompt">提示</string>
+    <string name="acount">账户</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="more">更多</string>
+    <string name="search">搜索</string>
+    <string name="loading">正在加载中...</string>
+    <string name="partchoose">请选择part</string>
+    <string name="datechoose">请选择日期</string>
+    <string name="citychoose">请选择城市</string>
+    <string name="roomchoose">请选择考场</string>
+    <string name="areachoose">请选择地区</string>
+    <string name="categorychoose">请选择类别</string>
+    <string name="registerPromp1">提示：</string>
+    <string name="registerPromp2">1.请登录您的邮箱查看验证码。 </string>
+    <string name="registerPromp3">2.部分邮件可能被您的邮箱屏蔽，请前往邮件垃圾箱查找 </string>
+    <string name="aaaa">TODO</string>
+
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#9f6eaf"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/arrow_back"
+            android:layout_width="40.0dip"
+            android:layout_height="40.0dip"
+            android:scaleType="center"
+            android:src="@drawable/arrow_white_back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40.0dip"
+            android:gravity="center"
+            android:text="写作答案"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/webView_witanswer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff" />
+
+</LinearLayout>
