@@ -19,6 +19,7 @@ import com.iyuce.fragment.Fragmentfour;
 import com.iyuce.fragment.Fragmentone;
 import com.iyuce.fragment.Fragmentthree;
 import com.iyuce.utils.NoScrollViewPager;
+import com.iyuce.utils.UpdateManager;
 import com.woyuce.activity.R;
 
 import android.app.AlertDialog;
@@ -58,6 +59,8 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 		initView();
 		initEvent();
 		setSelect(0);
+		
+		new UpdateManager(this).checkUpdate();
 	}
 
 	private void initView() {
